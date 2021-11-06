@@ -1,24 +1,43 @@
-# README
+#テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| Column             | Type    | Options             |
+| ------------------ | ------- | ------------------- |
+| employee_number    | integer | null: false, unicue |
+| last_name          | string  | null: false         |
+| first_name         | string  | null: false         |
+| email              | string  | null: false, unicue |
+| encrypted_password | string  | null: false         |
+| department         | text    | null: false         |
+| position           | text    | null: false         |
 
-* Ruby version
+## reports テーブル
 
-* System dependencies
+| Column           | Type       | Options                        |
+| ---------------- | ---------- | ------------------------------ |
+| start_of_work    | datetime   | null: false                    |
+| breakstart       | datetime   |                                |
+| breakend         | datetime   |                                |
+| end_of_work      | datetime   |                                |
+| business_content | text       |                                |
+| user             | references | null: false, foreign_key: true |
+| comment          | references | foreign_key: true              |
+| manegement       | references | foreign_key: true              |
 
-* Configuration
+## comments テーブル
 
-* Database creation
+| Column     | Type       | Options                        |
+| ---------- | ---------- | ------------------------------ |
+| text       | text       | null: false                    |
+| user       | references | null: false, foreign_key: true |
+| report     | references | null: false, foreign_key: true |
+| manegement | references | null: false                    |
 
-* Database initialization
+## manegements テーブル
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+| Column     | Type       | Options                        |
+| ---------- | ---------- | ------------------------------ |
+| user       | references | null: false, foreign_key: true |
+| report     | references | foreign_key: true              |
+| comment    | references | foreign_key: true              |
