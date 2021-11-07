@@ -1,3 +1,118 @@
-// Place all the styles related to the reports controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.wrapper {
+  display: flex;
+}
+
+.side_bar {
+  background-color: #efb3a6;
+  width: 280px;
+  height: 100vh;
+}
+
+.side-bar-header {
+  height: 100px;
+  padding: 0 20px;
+  background-color: #efb3a6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header-name a {
+  font-size: 16px;
+  color: #084a59;
+  text-decoration: none;
+}
+
+.menu-list {
+  margin-left: auto;
+}
+
+.menu-list a {
+  font-size: 14px;
+  border: 1px solid #084a59;
+  padding: 15px 20px;
+  background-color: #084a59;
+  color: #efb3a6;
+  text-decoration: none;
+}
+
+.menus {
+  height: calc(100vh - 100px);
+  padding: 10px 20px;
+  font-size: 20px;
+  overflow: scroll;
+}
+
+.menu {
+  padding: 30px 0 40px;
+}
+
+.menu-name a {
+  text-decoration: none;
+  color: #084a59;
+}
+
+.main_bar {
+  background-color: #084a59;
+  width: calc(100vw - 280px)
+}
+
+.main-header {
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title {
+  font-size: 24px;
+  color: #efb3a6;
+  margin-top: 36px;
+}
+
+.header-button {
+  margin-top: 40px;
+}
+
+.header-button a {
+  text-decoration: none;
+  border: 1px solid #efb3a6;
+  color: #efb3a6;
+  padding: 20px;
+}
+
+.reports {
+  background-color: #295964;
+  height: calc(100vh - 100px - 90px);
+  padding: 46px 40px 0;
+  overflow: scroll;
+}
+
+.report {
+  margin: 10px 0 0 0;
+}
+.upper-report {
+  display: flex;
+}
+.report-user {
+  font-size: 16px;
+  color: #efb3a6;
+}
+.report-date {
+  font-size: 12px;
+  color: #efb3a6;
+  padding-left: 10px;
+}
+.lower-report {
+  margin-top: 10px;
+}
+.report-content {
+  color: #efb3a6;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.footer {
+  background-color: #cea49b;
+  height: 90px;
+}
