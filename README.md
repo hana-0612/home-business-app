@@ -4,10 +4,10 @@
 
 | Column             | Type    | Options             |
 | ------------------ | ------- | ------------------- |
-| employee_number    | integer | null: false, unicue |
+| employee_number    | string  | null: false, unique |
 | last_name          | string  | null: false         |
 | first_name         | string  | null: false         |
-| email              | string  | null: false, unicue |
+| email              | string  | null: false, unique |
 | encrypted_password | string  | null: false         |
 | department         | text    | null: false         |
 | position           | text    | null: false         |
