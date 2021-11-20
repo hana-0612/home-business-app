@@ -25,6 +25,12 @@ class ReportsController < ApplicationController
     end  
   end
 
+  respond_to do |format|
+    format.csv do
+      send_data render_to_string, filename: "在宅勤務管理.csv", type: :csv
+    end
+  end
+
   private
   def reports_params
     params.permit(:start_of_work, :breakstart, :breakend, :end_of_work, :business_content).merge(user_id: current_user.id)
