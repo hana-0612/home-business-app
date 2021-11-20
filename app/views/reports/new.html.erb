@@ -1,0 +1,52 @@
+<div class='report-form'>
+  <h1>打刻・報告</h1>
+  <%=form_with model: @reports, local: true do |f|%>
+    <div class='report-form__field'>
+      <div class='report-form__field--left'>
+        <%= f.label :勤務開始, class: 'report-form__label'%>
+      </div>
+      <div class='report-form__field--right'>
+        <%= f.submit "出勤", id: "start_of_work", class: 'report-form__action-btn' %>
+      </div>
+    </div>
+    <div class='report-form__field'>
+    </div>
+    <div class='report-form__field--left'>
+      <%= f.label :休憩時間, id: "breakstart", class: 'report-form__label'%>
+    </div>
+    <div class='report-form__field--right'>
+        <%= f.submit "開始", class: 'report-form__action-btn' %>
+    </div>
+    <div class='report-form__field'>
+    </div>
+    <div class='report-form__field--right'>
+        <%= f.submit "終了", id: "breakend", class: 'report-form__action-btn' %>
+    </div>
+    <div class='report-form__field'>
+    </div>
+    <div class='report-form__field'>
+    </div>
+    <div class='report-form__field--left'>
+      <%= f.label :勤務終了, class: 'report-form__label'%>
+    </div>
+    <div class='report-form__field--right'>
+        <%= f.submit "退勤", id: "end_of_work", class: 'report-form__action-btn' %>
+    </div>
+    <div class='report-form__field'>
+    </div>
+    <div class='report-form__field'>
+    <div class='report-form__field--left'>
+      <%= f.label :実施報告, class: 'report-form__label'%>
+    </div>
+    <div class='report-form__field--right'>
+      <%= f.text_area :business_content, id: "end_of_work", class: 'report-form_name report-form__input', placeholder: 'お疲れさまでした', rows: "5" %>
+    </div>
+    </div>
+    <div class='report-form__field'>
+      <div class='report-form__field--left'></div>
+      <div class='report-form__field--right'>
+        <%= f.submit '報告する',  class: 'report-form__action-btn'%>
+      </div>
+    </div>
+  <% end %>
+</div>
