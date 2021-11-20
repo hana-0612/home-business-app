@@ -6,7 +6,7 @@
   color: #efb3a6;
   background-color: #084a59;
 }
-.account-page .account-page__inner .account-page__inner--left, .account-page .account-page__inner .account-page__inner--right {
+.account-page .account-page__inner .account-page__inner--right {
   width: 70%;
 }
 .account-page .account-page__inner:after {
