@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get 'reports/index'
   root to: "reports#index"
   resources :users, only: [:edit, :update]
+  resources :reports, only: [:index, :new, :create]
 end
