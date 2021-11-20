@@ -1,5 +1,6 @@
 class ReportsController < ApplicationController
   def index
+    @reports = Report.all
   end
 
   require "date"
@@ -15,7 +16,7 @@ class ReportsController < ApplicationController
       when "開始" ; @reports.breakstart = Time.now
       when "終了" ; @reports.breakend = Time.now
       when "退勤" ; @reports.end_of_work = Time.now
-      when "報告する" ; @reports.business_content
+      when "end_of_work" ; @reports.business_content
     end
     if @reports.save
       redirect_to root_path
@@ -26,7 +27,7 @@ class ReportsController < ApplicationController
 
   private
   def reports_params
-    params.permit(:start_of_work, :breakstart, :breakend, :end_of_work).merge(user_id: current_user.id)
+    params.permit(:start_of_work, :breakstart, :breakend, :end_of_work, :business_content).merge(user_id: current_user.id)
   end
 
 end

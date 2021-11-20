@@ -1,0 +1,22 @@
+<div class="report">
+  <div class="upper-report">
+    <div class="report-user">
+      <!-- 報告したユーザー名情報を出力する -->
+      <%= report.user.last_name %>
+      <%= report.user.first_name %>
+    </div>
+    <div class="report-date">
+      <!-- 報告した時刻を出力する -->
+     <p><%= "勤務開始：" "#{report.start_of_work}" %></p>
+     <p><%= "休憩開始：" "#{report.breakstart}" %></p>
+     <p><%= "休憩完了：" "#{report.breakend}" %></p>
+     <p><%= "勤務終了：" "#{report.end_of_work}" %></p>
+    </div>
+  </div>
+  <div class="lower-report">
+    <div class="report-content">
+      <!-- 業務内容を表示する -->
+      <p><%= "実施報告：" "#{report.business_content}" %></p>
+    </div>
+  </div>
+</div>

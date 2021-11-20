@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2021_11_14_020330) do
 
   create_table "reports", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.datetime "start_of_work", null: false
+    t.datetime "start_of_work"
     t.datetime "breakstart"
     t.datetime "breakend"
     t.datetime "end_of_work"

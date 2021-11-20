@@ -45,7 +45,8 @@
     <div class='report-form__field'>
       <div class='report-form__field--left'></div>
       <div class='report-form__field--right'>
-        <%= f.submit '報告する',  class: 'report-form__action-btn'%>
+        <%= f.submit '報告する',  id: "end_of_work", class: 'report-form__action-btn'%>
+        <%= link_to "一覧ページに戻る", :back, class: 'report-form__action-btn'%>
       </div>
     </div>
   <% end %>
