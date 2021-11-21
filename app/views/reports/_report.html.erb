@@ -9,22 +9,22 @@
       <!-- 報告した時刻を出力する -->
      <p><%= "勤務開始：" %>
         <% if report.start_of_work != nil %>
-          <%= l report.start_of_work %>
+          <%= l report.start_of_work, format: :short %>
         <% end %> 
       </p>
      <p><%= "休憩開始：" %>
         <% if report.breakstart != nil %>
-          <%= l report.breakstart %>
+          <%= l report.breakstart, format: :short %>
         <% end %> 
       </p>
      <p><%= "休憩完了：" %>
         <% if report.breakend != nil %>
-          <%= l report.breakend %>
+          <%= l report.breakend, format: :short %>
         <% end %> 
       </p>
      <p><%= "勤務終了："%>
         <% if report.end_of_work != nil %>
-          <%= l report.end_of_work %>
+          <%= l report.end_of_work, format: :short %>
         <% end %> 
       </p>
     </div>
