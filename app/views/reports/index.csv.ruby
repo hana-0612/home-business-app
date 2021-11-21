@@ -5,6 +5,7 @@ CSV.generate do |csv|
   csv << column_reports
   @reports.each do |report|
     column_values = [
+      report.user.employee_number,
       report.user.last_name,
       report.start_of_work,
       report.breakstart,
