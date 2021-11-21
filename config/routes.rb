@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   root to: "reports#index"
   resources :users, only: [:edit, :update]
   resources :reports, only: [:index, :new, :create]
+  namespace :admin do
+    resources :reports, only: [:index, :new, :create]
+  end
 end

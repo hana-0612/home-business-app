@@ -16,7 +16,11 @@
 </div>
 
 <div class="footer">
-  <div class="footer-button">
-  <%= link_to "CSV", root_path(format: :csv), class: "btn" %>
-  </div>
+  <% if user_signed_in? %>
+    <% if current_user == @user || current_user.admin? %>
+        <div class="footer-button">
+        <%= link_to "CSV", root_path(format: :csv), class: "btn" %>
+        </div>
+    <% end %>
+  <% end %>
 </div>
