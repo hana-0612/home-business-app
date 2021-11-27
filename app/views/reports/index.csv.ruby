@@ -1,7 +1,7 @@
 require 'csv'
 
 CSV.generate do |csv|
-  column_reports = %w(名前 勤務開始 休憩開始 休憩終了 勤務終了 実施報告 )
+  column_reports = %w(社員番号 名前 勤務開始 休憩開始 休憩終了 勤務終了 実施報告 )
   csv << column_reports
   @reports.each do |report|
     column_values = [
