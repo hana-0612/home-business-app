@@ -9,21 +9,21 @@
 
 ## テスト用アカウント	
 
-  #ID/Pass
-    ID: admin2 /Pass: 33333
-  #テスト用アカウント等
-    *管理者用 メールアドレス: bbb@gmail.com/パスワード: 000000P
-    *一般用   メールアドレス: aaa@gmail.com/パスワード: 000000P
-    *Githubリポジトリ: [Home business app](https://github.com/hana-0612/home-business-app "Home business app login top")
+  I<dl>D/Pass</dl>
+    <dd>ID: admin2 /Pass: 33333</dd>
+  <dl>テスト用アカウント等</dl>
+    <dd>管理者用 メールアドレス: bbb@gmail.com/パスワード: 000000P</dd>
+    <dd>一般用   メールアドレス: aaa@gmail.com/パスワード: 000000P</dd>
+    <dd>Githubリポジトリ: [Home business app](https://github.com/hana-0612/home-business-app "Home business app login top")</dd>
 
 ## 利用方法
-  *新規アカウント作成ページよりアカウントを作成
-  *ログイン後、打刻・報告ページより勤怠打刻、業務終了報告を投稿する
-  *打刻・報告後は一覧にて報告内容が表示される
-  *管理者のみ表示されるcsvボタンより報告内容の一覧をダウンロードすることが可能。
+  <dd>新規アカウント作成ページよりアカウントを作成</dd>
+  <dd>ログイン後、打刻・報告ページより勤怠打刻、業務終了報告を投稿する</dd>
+  <dd>打刻・報告後は一覧にて報告内容が表示される
+  <dd>管理者のみ表示されるcsvボタンより報告内容の一覧をダウンロードすることが可能</dd>
 
 #目指した課題解決	
-  ・メールでの報告を要請されている在宅勤務の勤怠報告を報告者及び管理者の双方の観点で業務効率を図るために現場に要望に合わせたWEB勤怠アプリ作成
+  メールでの報告を要請されている在宅勤務の勤怠報告を報告者及び管理者の双方の観点で業務効率を図るために現場に要望に合わせたWEB勤怠アプリ作成
 
 #洗い出した要件	
   [![Image from Gyazo](https://i.gyazo.com/6e16857e00ba34916e604978c6e7d7fb.png)](https://gyazo.com/6e16857e00ba34916e604978c6e7d7fb)
@@ -40,8 +40,9 @@
   <dl>打刻・報告ページ</dl>
     <dd>① 各打刻時間（勤務開始・休憩開始・終了・勤務終了）のボタンを設置</dd> 
     <dd>② 終業時には実施した実施業務を報告する投稿機能を設置</dd>
-  <dl>一覧ページ:部内のメンバーにおける勤務状況を共有する勤務状況一覧を表示</dl>
-    <dd>追加機能として編集機能、コメント機能、チャット機能のを対応中</dd>
+  <dl>一覧ページ</dl>
+    <dd>部内のメンバーにおける勤務状況を共有する勤務状況一覧を表示</dd>
+    <dd>※追加機能として編集機能、コメント機能、チャット機能のを対応中</dd>
 
 [![Image from Gyazo](https://i.gyazo.com/cd2547e24b6d4a7a643fe8e8d11f9b54.gif)](https://gyazo.com/cd2547e24b6d4a7a643fe8e8d11f9b54)
 
@@ -49,6 +50,7 @@
   管理者のみ勤怠管理業務の一貫で必要となるデータをcsvでダウンロード可能するボタンを設置
   [![Image from Gyazo](https://i.gyazo.com/89b74704a5691b4739089447546a5fa0.gif)](https://gyazo.com/89b74704a5691b4739089447546a5fa0)
   [![Image from Gyazo](https://i.gyazo.com/d02828bbfba46b80d9b679bc5a3a18b5.gif)](https://gyazo.com/d02828bbfba46b80d9b679bc5a3a18b5)
+
 
 #テーブル設計
 
