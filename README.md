@@ -9,14 +9,15 @@
 
 ## テスト用アカウント	
 
-  <dl>ID/Pass</dl>
-    <dd>ID: admin2 /Pass: 33333</dd>
-    <dd></dd>
-  <dl>テスト用アカウント等</dl>
-    <dd>・管理者用 メールアドレス: bbb@gmail.com/パスワード: 000000P</dd>
-    <dd>・一般用   メールアドレス: aaa@gmail.com/パスワード: 000000P</dd>
-    <dd>・Githubリポジトリ: [Home business app](https://github.com/hana-0612/home-business-app "Home business app login top")</dd>
-
+  <dl>
+      <dt>ID/Pass</dT>
+      <dd>ID: admin2 /Pass: 33333</dd>
+    <dt>テスト用アカウント等</dt>
+      <dd>・管理者用 メールアドレス: bbb@gmail.com/パスワード: 000000P</dd>
+      <dd>・一般用   メールアドレス: aaa@gmail.com/パスワード: 000000P</dd>
+      <dd>・Githubリポジトリ: [Home business app](https://github.com/hana-0612/home-business-app "Home business app login top")</dd>
+  </dl>
+  
 ## 利用方法
   <dd>・新規アカウント作成ページよりアカウントを作成</dd>
   <dd>・ログイン後、打刻・報告ページより勤怠打刻、業務終了報告を投稿する</dd>
@@ -38,14 +39,14 @@
 [![Image from Gyazo](https://i.gyazo.com/0b470d17261a87c646de16761255f65b.gif)](https://gyazo.com/0b470d17261a87c646de16761255f65b)
 
 ## 日次勤怠、実施業務の報告機能
-  <dl>打刻・報告ページ</dl>
-    <dd>① 各打刻時間（勤務開始・休憩開始・終了・勤務終了）のボタンを設置</dd> 
-    <dd>② 終業時には実施した実施業務を報告する投稿機能を設置</dd>
-  
-  <dl>一覧ページ</dl>
-    <dd></dd>
-    <dd>部内のメンバーにおける勤務状況を共有する勤務状況一覧を表示</dd>
-    <dd>※追加機能として編集機能、コメント機能、チャット機能のを対応中</dd>
+  <dl>
+    <dt>打刻・報告ページ</dt>
+      <dd>① 各打刻時間（勤務開始・休憩開始・終了・勤務終了）のボタンを設置</dd> 
+      <dd>② 終業時には実施した実施業務を報告する投稿機能を設置</dd>   
+    <dt>一覧ページ</dt>
+      <dd>部内のメンバーにおける勤務状況を共有する勤務状況一覧を表示</dd>
+      <dd>※追加機能として編集機能、コメント機能、チャット機能のを対応中</dd>
+  </dl>
 
 [![Image from Gyazo](https://i.gyazo.com/cd2547e24b6d4a7a643fe8e8d11f9b54.gif)](https://gyazo.com/cd2547e24b6d4a7a643fe8e8d11f9b54)
 
